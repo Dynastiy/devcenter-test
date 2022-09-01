@@ -40,8 +40,8 @@
             <div class="text-center">
                 <h6 class="small text-uppercase text-white mb-1">sterling bank</h6>
                 <div class="d-flex align-items-center justify-content-center" style="gap:3px">
-                    <h4 class="text-white">0046748389</h4>
-                    <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <h4 class="text-white">{{ account_number }}</h4>
+                    <span><svg @click="copyAddress" role="button" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <rect x="8" y="8" width="12" height="12" rx="2"></rect>
                     <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
@@ -81,3 +81,23 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+    data(){
+        return{
+            account_number: "0046748389"
+        }
+    },
+    methods:{
+        copyAddress() {
+      navigator.clipboard.writeText(this.account_number).then(
+        (success) => {
+          (alert("copied")), console.log(success);
+        },
+        (err) => console.log("error", err)
+      );
+    },
+    }
+}
+</script>
