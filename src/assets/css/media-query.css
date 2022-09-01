@@ -1,0 +1,23 @@
+    @media (max-width: 990px) {
+        .main--layout {
+            display: grid;
+            grid-template-columns: auto;
+            gap: 40px;
+        }
+        .container-fluid {
+            padding: 1rem 1rem;
+        }
+        .menu-items .main--content ul  li:first-child::after{
+            content: "";
+            height: 3px;
+            background-color: var(--accent-color);
+            width: 16%;
+            position: absolute;
+            left: 0;
+            top:18px;
+            border-radius:5px 5px 0 0;
+        }
+        .menu-items .main--content ul  li{
+            margin-bottom: 10px;
+        }
+    }

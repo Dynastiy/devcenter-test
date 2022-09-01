@@ -1,0 +1,186 @@
+@import url('@/assets/css/partials.css');
+.container-fluid {
+    padding: 1rem 3rem;
+}
+
+.main--content {
+    padding: 1rem 1.5rem;
+}
+.app--header {
+    background-color: var(--main-color);
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.main--layout {
+    display: grid;
+    grid-template-columns: auto 35%;
+    gap: 25px;
+}
+
+.left--side {
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+}
+
+.a,
+.b,
+.c,
+.d,
+.A,
+.B,
+.C,
+.D{
+    
+    background-color: #E3E2FF;
+    color: #545384;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.e,
+.f,.g
+
+.E,.F, .G {
+    background-color: #FFE3E7;
+    color: #A0616A;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h,
+.i,
+.j,
+.J,
+.I,
+.H {
+    background-color: #E0F2FF;
+    color: #567286;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.K,
+.L,
+.M,
+.N,
+.O,
+.P,
+.m,
+.n,
+.o,
+.p,
+.k,
+.l {
+    background-color: #E8F5FF;
+    color: #1F90E1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.q,
+.r,
+.s,
+.t,
+.u,
+.Q,
+.R,
+.S,
+.T,
+.U {
+    background-color: #01445f;
+    color: #567286;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.v,
+.w,
+.x,
+.y,
+.z,
+.V,
+.W,
+.X,
+.Y,
+.Z {
+    background-color: rgb(11, 100, 11);
+    color: #fff;
+}
+
+.menu-items .main--content ul  li{
+    font-size: 12px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+.menu-items .main--content ul  li:first-child {
+    color: var(--primary-color);
+    position: relative;
+}
+
+.menu-items .main--content ul  li:first-child::after{
+    content: "";
+    height: 3px;
+    background-color: var(--secondary-color);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:26px;
+    border-radius:5px 5px 0 0;
+}
+
+.divider {
+    height: 1px;
+    background-color:#E5E5E5;
+    width: 100%;
+}
+
+.card--payments {
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 75px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px #e5e5e5;
+}
+
+.share--btn {
+    /* padding: ; */
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #3E3C3C;
+}

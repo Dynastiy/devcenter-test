@@ -5,6 +5,9 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+import '@/assets/css/main.css'
+import '@/assets/css/media-query.css'
+
 new Vue({
   router,
   store,
